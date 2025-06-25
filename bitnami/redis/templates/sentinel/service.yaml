@@ -193,7 +193,7 @@ spec:
   entryPoints:
     - vpn-redis
   routes:
-    - match: HostSNI(`{{ .Values.ingress.dnsName }}`)
+    - match: HostSNI(`{{ .Values.sentinel.ingress.dnsName }}`)
       kind: Rule
       services:
         - name: redis-sentinel-headless

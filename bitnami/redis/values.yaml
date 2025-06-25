@@ -1176,7 +1176,7 @@ sentinel:
 
   ingress:
     enabled: false
-    dnsName: example.com
+    dnsName: ""
 
 
   ## Bitnami Redis(R) Sentinel image version
