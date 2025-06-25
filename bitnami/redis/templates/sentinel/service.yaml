@@ -183,7 +183,7 @@ spec:
 --- ########################################################################################################################
 
 apiVersion: traefik.io/v1alpha1
-kind: IngressRoute
+kind: IngressRouteTCP
 metadata:
   name: redis-sentinel
   namespace: redis-sentinel
@@ -191,9 +191,9 @@ metadata:
     kubernetes.io/ingress.class: traefik-external
 spec:
   entryPoints:
-    - vpn-websecure
+    - vpn-redis
   routes:
-    - match: Host(`{{ .Values.ingress.dnsName }}`)
+    - match: HostSNI(`{{ .Values.ingress.dnsName }}`)
       kind: Rule
       services:
         - name: redis-sentinel-headless
