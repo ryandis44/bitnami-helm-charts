@@ -199,5 +199,5 @@ spec:
         - name: redis-sentinel-headless
           port: {{ .Values.sentinel.service.ports.sentinel }}
   tls:
-    secretName: illios-api-{{ .Values.meta.environment }}-tls-secret
+    secretName: redis-sentinel-tls-secret
 {{- end }}
