@@ -1176,8 +1176,8 @@ sentinel:
 
   ingress:
     enabled: false
-    dnsName: ""
-    
+    dnsName: example.com
+
 
   ## Bitnami Redis(R) Sentinel image version
   ## ref: https://hub.docker.com/r/bitnami/redis-sentinel/tags/
