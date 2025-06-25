@@ -194,7 +194,6 @@ spec:
     - vpn-redis
   routes:
     - match: HostSNI(`{{ .Values.sentinel.ingress.dnsName }}`)
-      kind: Rule
       services:
         - name: redis-sentinel-headless
           port: {{ .Values.sentinel.service.ports.redis }}
