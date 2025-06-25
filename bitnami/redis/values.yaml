@@ -1173,6 +1173,12 @@ sentinel:
   ## create a single Redis(R) service exposing both the Redis and Sentinel ports
   ##
   enabled: false
+
+  ingress:
+    enabled: false
+    dnsName: ""
+    
+
   ## Bitnami Redis(R) Sentinel image version
   ## ref: https://hub.docker.com/r/bitnami/redis-sentinel/tags/
   ## @param sentinel.image.registry [default: REGISTRY_NAME] Redis(R) Sentinel image registry

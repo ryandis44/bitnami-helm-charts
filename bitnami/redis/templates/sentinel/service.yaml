@@ -161,3 +161,43 @@ spec:
 {{- end }}
 {{- end }}
 {{- end }}
+
+--- ########################################################################################################################
+
+{{- if .Values.sentinel.ingress.enabled }}
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: redis-sentinel-tls-cert
+  namespace: redis-sentinel
+spec:
+  secretName: redis-sentinel-tls-secret
+  dnsNames:
+    - {{ .Values.sentinel.ingress.dnsName }}
+  duration: 168h
+  renewBefore: 24h
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt-production-illiosdigital
+
+--- ########################################################################################################################
+
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: redis-sentinel
+  namespace: redis-sentinel
+  annotations: 
+    kubernetes.io/ingress.class: traefik-external
+spec:
+  entryPoints:
+    - vpn-websecure
+  routes:
+    - match: Host(`{{ .Values.ingress.dnsName }}`)
+      kind: Rule
+      services:
+        - name: redis-sentinel-headless
+          port: {{ .Values.sentinel.service.ports.sentinel }}
+  tls:
+    secretName: illios-api-{{ .Values.meta.environment }}-tls-secret
+{{- end }}
