@@ -191,12 +191,12 @@ metadata:
     kubernetes.io/ingress.class: traefik-external
 spec:
   entryPoints:
-    - vpn-redis
+    - vpn-redis-sentinel
   routes:
-    - match: HostSNI(`{{ .Values.sentinel.ingress.dnsName }}`)
+    - match: HostSNI(`sentinel-0.{{ .Values.sentinel.ingress.dnsName }}`)
       services:
         - name: redis-sentinel-headless
-          port: {{ .Values.sentinel.service.ports.redis }}
+          port: {{ .Values.sentinel.service.ports.sentinel }}
   tls:
     secretName: redis-sentinel-tls-secret
 {{- end }}
