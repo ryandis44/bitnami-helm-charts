@@ -1,33 +1,7 @@
 FROM bitnami/redis:8.0.2-debian-12-r3
 
 USER 0
-RUN apt-get update && apt-get install -y \
-    libxcrypt-source \
-    build-essential \
-    autoconf \
-    automake \
-    libtool \
-    pkg-config \
-    xz-utils \
-    wget \
-    && cd /usr/src \
-    && tar -xf libxcrypt.tar.xz \
-    && cd libxcrypt-* \
-    && ./autogen.sh \
-    && ./configure --enable-hashes=strong,glibc --enable-obsolete-api=yes --enable-crypt-compat \
-    && make -j"$(nproc)" \
-    && cp src/.libs/libcrypt.so.2 /usr/lib/x86_64-linux-gnu/ \
-    && cd / \
-    && rm -rf /usr/src/libxcrypt* \
-    && apt-get purge -y \
-        build-essential \
-        autoconf \
-        automake \
-        libtool \
-        pkg-config \
-        libxcrypt-source \
-    && apt-get autoremove -y \
-    && apt-get clean
+RUN apt-get update && apt-get install -y libxcrypt-source
 
 
 RUN mkdir -p /opt/bitnami/redis/modules
