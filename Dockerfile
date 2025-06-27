@@ -1,7 +1,8 @@
 FROM bitnami/redis:8.0.2-debian-12-r3
 
 USER 0
-RUN apt-get update && apt-get install -y libxcrypt
+RUN apt-get update && apt-get install -y libxcrypt1
+
 
 RUN mkdir -p /opt/bitnami/redis/modules
 COPY bitnami/redis/rejson/rejson.so /opt/bitnami/redis/modules/rejson.so
