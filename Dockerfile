@@ -1,8 +1,7 @@
 FROM bitnami/redis:8.0.2-debian-12-r3
 
 USER 0
-RUN apt-get update && apt-get install -y libxcrypt-source
-RUN ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1 /usr/lib/x86_64-linux-gnu/libcrypt.so.2
+RUN apt-get update && apt-get install -y libcrypt1
 
 
 RUN mkdir -p /opt/bitnami/redis/modules
