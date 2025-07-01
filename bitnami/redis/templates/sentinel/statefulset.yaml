@@ -82,7 +82,7 @@ spec:
       affinity:
         podAffinity: {{- include "common.affinities.pods" (dict "type" .Values.replica.podAffinityPreset "component" "node" "customLabels" $podLabels "context" $) | nindent 10 }}
         podAntiAffinity:
-          {{ .Values.sentinel.affinity.duringSchedulingIgnoredDuringExecution }}:
+          {{ .Values.sentinel.affinity.duringSchedulingIgnoredDuringExecution }}duringSchedulingIgnoredDuringExecution:
           {{- if eq .Values.sentinel.affinity.duringSchedulingIgnoredDuringExecution "preferred" }}
             - podAffinityTerm:
                 labelSelector:
