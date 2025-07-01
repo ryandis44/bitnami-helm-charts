@@ -1177,6 +1177,14 @@ sentinel:
   ingress:
     enabled: false
     dnsName: ""
+  
+  affinity:
+    duringSchedulingIgnoredDuringExecution: preferred
+    topologyKey: machine
+    matchExpressions:
+      key: ""
+      operator: In
+      value: ""
 
 
   ## Bitnami Redis(R) Sentinel image version

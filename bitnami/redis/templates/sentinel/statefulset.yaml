@@ -81,7 +81,24 @@ spec:
       {{- else }}
       affinity:
         podAffinity: {{- include "common.affinities.pods" (dict "type" .Values.replica.podAffinityPreset "component" "node" "customLabels" $podLabels "context" $) | nindent 10 }}
-        podAntiAffinity: {{- include "common.affinities.pods" (dict "type" .Values.replica.podAntiAffinityPreset "component" "node" "customLabels" $podLabels "context" $) | nindent 10 }}
+        podAntiAffinity:
+          {{ .Values.sentinel.affinity.duringSchedulingIgnoredDuringExecution }}:
+          {{- if eq .Values.sentinel.affinity.duringSchedulingIgnoredDuringExecution "preferred" }}
+            - podAffinityTerm:
+                labelSelector:
+                  matchExpressions:
+                    - key: {{ .Values.sentinel.affinity.matchExpressions.key }}
+                      operator: {{ .Values.sentinel.affinity.matchExpressions.operator }}
+                      values:
+                        - {{ .Values.sentinel.affinity.matchExpressions.value }}
+                topologyKey: {{ .Values.sentinel.affinity.topologyKey }}
+              weight: 50
+          {{- else }}
+            - labelSelector:
+                matchLabels:
+                  {{ .Values.sentinel.affinity.matchExpressions.key }}: {{ .Values.sentinel.affinity.matchExpressions.value }}
+              topologyKey: {{ .Values.sentinel.affinity.topologyKey }}
+          {{- end }}
         nodeAffinity: {{- include "common.affinities.nodes" (dict "type" .Values.replica.nodeAffinityPreset.type "key" .Values.replica.nodeAffinityPreset.key "values" .Values.replica.nodeAffinityPreset.values) | nindent 10 }}
       {{- end }}
       {{- if .Values.replica.nodeSelector }}
