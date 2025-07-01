@@ -1179,7 +1179,7 @@ sentinel:
     dnsName: ""
   
   affinity:
-    duringSchedulingIgnoredDuringExecution: preferred
+    duringSchedulingIgnoredDuringExecution: requiredDuringSchedulingIgnoredDuringExecution
     topologyKey: machine
     matchExpressions:
       key: ""
