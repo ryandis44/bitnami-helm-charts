@@ -1,4 +1,4 @@
-FROM bitnami/redis:8.0.2-debian-12-r3
+FROM bitnami/redis:8.0.3-debian-12-r1
 
 RUN mkdir -p /opt/bitnami/redis/modules
 COPY bitnami/redis/rejson/rejson.so /opt/bitnami/redis/modules/rejson.so
