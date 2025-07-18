@@ -1,8 +1,32 @@
 # Changelog
 
-## 5.0.1 (2025-06-13)
+## 5.0.7 (2025-07-17)
 
-* [bitnami/grafana-loki] :zap: :arrow_up: Update dependency references ([#34433](https://github.com/bitnami/charts/pull/34433))
+* [bitnami/grafana-loki] :zap: :arrow_up: Update dependency references ([#35177](https://github.com/bitnami/charts/pull/35177))
+
+## <small>5.0.6 (2025-07-15)</small>
+
+* [bitnami/grafana-loki] :zap: :arrow_up: Update dependency references (#35095) ([a8d1bd3](https://github.com/bitnami/charts/commit/a8d1bd312e60c0ebafd1c739b5e1de9251d7c91b)), closes [#35095](https://github.com/bitnami/charts/issues/35095)
+
+## <small>5.0.5 (2025-07-11)</small>
+
+* [bitnami/grafana-loki] :zap: :arrow_up: Update dependency references (#35019) ([cc231c8](https://github.com/bitnami/charts/commit/cc231c804653bacbc7367b43ab552224ea6ec243)), closes [#35019](https://github.com/bitnami/charts/issues/35019)
+
+## <small>5.0.4 (2025-07-09)</small>
+
+* [bitnami/grafana-loki] :zap: :arrow_up: Update dependency references (#34898) ([3999e3d](https://github.com/bitnami/charts/commit/3999e3dce59d7774f7cfb5640ec75f4947d1fa2f)), closes [#34898](https://github.com/bitnami/charts/issues/34898)
+
+## <small>5.0.3 (2025-06-30)</small>
+
+* [bitnami/grafana-loki] :zap: :arrow_up: Update dependency references (#34715) ([dfdc532](https://github.com/bitnami/charts/commit/dfdc532e3fecf7662f932ce720e035cd705b09e4)), closes [#34715](https://github.com/bitnami/charts/issues/34715)
+
+## <small>5.0.2 (2025-06-26)</small>
+
+* [bitnami/grafana-loki] :zap: :arrow_up: Update dependency references (#34657) ([06f7005](https://github.com/bitnami/charts/commit/06f7005886729f5173fd5b2be3e475adb5a7015b)), closes [#34657](https://github.com/bitnami/charts/issues/34657)
+
+## <small>5.0.1 (2025-06-13)</small>
+
+* [bitnami/grafana-loki] :zap: :arrow_up: Update dependency references (#34433) ([9c4e353](https://github.com/bitnami/charts/commit/9c4e3537c5eae296d41ac5112a5612547c9ba534)), closes [#34433](https://github.com/bitnami/charts/issues/34433)
 
 ## 5.0.0 (2025-06-13)
 

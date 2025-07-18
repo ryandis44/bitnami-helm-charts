@@ -1,8 +1,28 @@
 # Changelog
 
-## 12.0.6 (2025-06-17)
+## 12.0.11 (2025-07-16)
 
-* [bitnami/etcd] :zap: :arrow_up: Update dependency references ([#34427](https://github.com/bitnami/charts/pull/34427))
+* [bitnami/etcd] Always use initial cluster token ([#35160](https://github.com/bitnami/charts/pull/35160))
+
+## <small>12.0.10 (2025-07-15)</small>
+
+* [bitnami/etcd] :zap: :arrow_up: Update dependency references (#35084) ([6e98277](https://github.com/bitnami/charts/commit/6e982774426942dd86fc4375f3968b7a37e68fee)), closes [#35084](https://github.com/bitnami/charts/issues/35084)
+
+## <small>12.0.9 (2025-07-10)</small>
+
+* [bitnami/etcd] :zap: :arrow_up: Update dependency references (#34997) ([45ad7d6](https://github.com/bitnami/charts/commit/45ad7d61d7261a51f433d6420549ea982b9d8c9f)), closes [#34997](https://github.com/bitnami/charts/issues/34997)
+
+## <small>12.0.8 (2025-07-08)</small>
+
+* [bitnami/etcd] :zap: :arrow_up: Update dependency references (#34881) ([6d91652](https://github.com/bitnami/charts/commit/6d916522b51a18123e5c70705996d37549820bb0)), closes [#34881](https://github.com/bitnami/charts/issues/34881)
+
+## <small>12.0.7 (2025-07-03)</small>
+
+* [bitnami/etcd] Fix protocol selection in defrag job (#34767) ([d6916ae](https://github.com/bitnami/charts/commit/d6916aef81a368351747137f8107fe6add7e3e93)), closes [#34767](https://github.com/bitnami/charts/issues/34767)
+
+## <small>12.0.6 (2025-06-17)</small>
+
+* [bitnami/etcd] :zap: :arrow_up: Update dependency references (#34427) ([9cf5b43](https://github.com/bitnami/charts/commit/9cf5b43efaf70d8e0490b3e0af08a11276cc528b)), closes [#34427](https://github.com/bitnami/charts/issues/34427)
 
 ## <small>12.0.5 (2025-06-16)</small>
 

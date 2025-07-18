@@ -1,8 +1,36 @@
 # Changelog
 
-## 9.0.23 (2025-06-25)
+## 9.0.30 (2025-07-15)
 
-* [bitnami/argo-cd] Update dependencies ([#34617](https://github.com/bitnami/charts/pull/34617))
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references ([#35083](https://github.com/bitnami/charts/pull/35083))
+
+## <small>9.0.29 (2025-07-10)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#34993) ([e40a5c2](https://github.com/bitnami/charts/commit/e40a5c2288a2472c8a4a8b7e4979414b817fe563)), closes [#34993](https://github.com/bitnami/charts/issues/34993)
+
+## <small>9.0.28 (2025-07-08)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#34885) ([303e461](https://github.com/bitnami/charts/commit/303e4619e9fefd4aaa788c988ecdc5225268d0c7)), closes [#34885](https://github.com/bitnami/charts/issues/34885)
+
+## <small>9.0.27 (2025-07-08)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#34873) ([a0b52e5](https://github.com/bitnami/charts/commit/a0b52e54449e17de8d30d4e9e9034163ed9eba93)), closes [#34873](https://github.com/bitnami/charts/issues/34873)
+
+## <small>9.0.26 (2025-07-06)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#34817) ([79386fb](https://github.com/bitnami/charts/commit/79386fbc2708eff04a811e86e4ce162bd2fd5c6a)), closes [#34817](https://github.com/bitnami/charts/issues/34817)
+
+## <small>9.0.25 (2025-06-28)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#34700) ([fda645b](https://github.com/bitnami/charts/commit/fda645b0fd169b6b86f6f12afadb2887f4495802)), closes [#34700](https://github.com/bitnami/charts/issues/34700)
+
+## <small>9.0.24 (2025-06-26)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#34646) ([7cfd3de](https://github.com/bitnami/charts/commit/7cfd3dec72e774a2ce96eaf4e8eef8fc82ef032f)), closes [#34646](https://github.com/bitnami/charts/issues/34646)
+
+## <small>9.0.23 (2025-06-25)</small>
+
+* [bitnami/argo-cd] Update dependencies (#34617) ([860d135](https://github.com/bitnami/charts/commit/860d135a63fe4c9321676bcd73fc9a6299b7ac67)), closes [#34617](https://github.com/bitnami/charts/issues/34617)
 
 ## <small>9.0.22 (2025-06-18)</small>
 
